@@ -8,11 +8,17 @@ import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './shared/material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { CardComponent } from './card/card.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    CardComponent,
+
+
   ],
   imports: [
     BrowserModule,
