@@ -5,6 +5,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
 // 放所有要import的material components，之後新增material只要修改這裡就好
 const MaterialCompomnents = [
   MatButtonModule,
@@ -12,6 +18,11 @@ const MaterialCompomnents = [
   MatIconModule,
   MatCheckboxModule,
   MatCardModule,
+  MatInputModule,
+  MatSelectModule,
+  MatFormFieldModule,
+  MatTableModule,
+  MatPaginatorModule,
 ]
 
 @NgModule({
