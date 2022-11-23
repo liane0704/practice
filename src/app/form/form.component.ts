@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms'; // 匯入�
 })
 export class FormComponent implements OnInit {
 
-  //雙向綁定
+//雙向綁定
   name: any
  email: any
  password: any
