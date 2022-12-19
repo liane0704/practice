@@ -1,7 +1,7 @@
 <p>
   <mat-toolbar>
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
+      <mat-icon (click)="sideNav.toggle()">menu</mat-icon>
     </button>
     <span>My App</span>
     <span class="example-spacer"></span>
@@ -12,4 +12,21 @@
       <mat-icon>share</mat-icon>
     </button>
   </mat-toolbar>
+
+
+  <mat-sidenav-container>
+
+    <mat-sidenav #sideNav class="sidenav" mode="push" opened> <!-- opened表示一開始開網頁就會打開 ; # 表示設id -->
+        <mat-nav-list>
+            <a mat-list-item routerLink="home">Home</a> <!-- Sidenav裡面的內容 -->
+
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="vh-100"> <!-- Sidenav裡面的內容(灰色區塊 ; vh-100跟網頁一樣大-->
+        <!-- 各個程式 route 搬到這裡 -->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
 </p>

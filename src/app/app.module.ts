@@ -1,4 +1,4 @@
-//網頁一開始的畫面(家component時會自動加)
+//網頁一開始的畫面(加component時會自動加)
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,7 +13,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CardComponent } from './card/card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TableComponent } from './table/table.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { LoginComponent } from './login/login.component';
 
 
@@ -28,7 +27,6 @@ import { LoginComponent } from './login/login.component';
     CardComponent,
     FormComponent,
     TableComponent,
-    SidenavComponent,
     LoginComponent,
 
 

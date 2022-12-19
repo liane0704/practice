@@ -12,6 +12,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatListModule} from '@angular/material/list';
 
 const MaterialCompomnents = [
   MatButtonModule,
@@ -26,6 +27,7 @@ const MaterialCompomnents = [
   MatPaginatorModule,
   MatSidenavModule,
   MatMenuModule,
+  MatListModule,
 ]
 
 @NgModule({
