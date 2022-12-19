@@ -11,8 +11,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatMenuModule} from '@angular/material/menu';
 
-// 放所有要import的material components，之後新增material只要修改這裡就好
 const MaterialCompomnents = [
   MatButtonModule,
   MatToolbarModule,
@@ -25,16 +25,18 @@ const MaterialCompomnents = [
   MatTableModule,
   MatPaginatorModule,
   MatSidenavModule,
+  MatMenuModule,
 ]
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    MaterialCompomnents,
+
+
+  ],exports:[
+    MaterialCompomnents, //所有material components
+
   ]
-  ,exports: [
-    MaterialCompomnents,//所有material cmponents
-    ],
 })
 export class MaterialModule { }

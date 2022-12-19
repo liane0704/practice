@@ -14,6 +14,10 @@ import { CardComponent } from './card/card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TableComponent } from './table/table.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { LoginComponent } from './login/login.component';
+
+
+
 
 
 @NgModule({
@@ -25,12 +29,15 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     FormComponent,
     TableComponent,
     SidenavComponent,
+    LoginComponent,
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+
     BrowserAnimationsModule,
     FormsModule, ReactiveFormsModule
   ],
